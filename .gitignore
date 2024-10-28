@@ -213,6 +213,5 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # My ignores
-data
 model/*
 ignored
