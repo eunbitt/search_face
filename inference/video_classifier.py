@@ -8,6 +8,9 @@ from face_recognition import preprocessing
 from .util import draw_bb_on_img
 from .constants import MODEL_PATH
 
+# 비디오 스트림에서 실시간으로 얼굴을 탐지하고 분류함.
+# 기본적으로 웹캠을 사용함, 다른 비디오 입력을 설정할 수도 있음. 
+
 
 def main():
     cap = cv2.VideoCapture(0)

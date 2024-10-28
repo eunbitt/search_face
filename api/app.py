@@ -6,6 +6,10 @@ from flask_restplus import Api, Resource, fields, abort, inputs
 from werkzeug.datastructures import FileStorage
 from face_recognition import preprocessing
 
+# Flask 기반 서버 애플리케이션
+# API 엔드포인트를 정의하고 얼굴 인식 기능 제공
+# !! Django 프레임워크에 맞게 수정해야함 !! 
+
 face_recogniser = joblib.load('model/face_recogniser.pkl')
 preprocess = preprocessing.ExifOrientationNormalize()
 
